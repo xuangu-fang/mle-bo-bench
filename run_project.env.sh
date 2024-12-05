@@ -4,7 +4,7 @@ sudo apt install git-lfs
 git lfs fetch --all
 git lfs pull
 
-conda env create -n mle python=3.11.10
+conda create -n mle python=3.11.10
 conda activate mle
 
 mkdir .kaggle
