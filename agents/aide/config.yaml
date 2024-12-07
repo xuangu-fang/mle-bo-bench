@@ -1,6 +1,6 @@
 vars:
   step_count: &step_count 30
-  time_limit: &time_limit 1000 # 5 min
+  time_limit: &time_limit 120 # 5 min
 
 defaults: &defaults
   start: aide/start.sh
@@ -20,12 +20,12 @@ aide:
   <<: *defaults
   kwargs:
     <<: *kwargs_common
-    agent.code.model: ${{ secrets.CHAT_MODEL }} # gpt-4o
-    agent.feedback.model: ${{ secrets.CHAT_MODEL }} # gpt-4o
+    # agent.code.model: ${{ secrets.CHAT_MODEL }} # gpt-4o
+    # agent.feedback.model: ${{ secrets.CHAT_MODEL }} # gpt-4o
     agent.steps: *step_count
   env_vars:
     <<: *env_vars
-    AZURE_OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+    AZURE_OPENAI_AD_TOKEN: ${{ secrets.AZURE_OPENAI_AD_TOKEN }}
     AZURE_OPENAI_ENDPOINT: ${{ secrets.AZURE_OPENAI_ENDPOINT }}
     OPENAI_API_VERSION: ${{ secrets.OPENAI_API_VERSION }} # 2024-05-01-preview
 
@@ -33,12 +33,12 @@ aide/dev:
   <<: *defaults
   kwargs:
     <<: *kwargs_common
-    agent.code.model: ${{ secrets.CHAT_MODEL }} # gpt-4o
-    agent.feedback.model: ${{ secrets.CHAT_MODEL }} # gpt-4o
+    # agent.code.model: ${{ secrets.CHAT_MODEL }} # gpt-4o
+    # agent.feedback.model: ${{ secrets.CHAT_MODEL }} # gpt-4o
     agent.steps: 8
   env_vars:
     <<: *env_vars
-    AZURE_OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+    AZURE_OPENAI_AD_TOKEN: ${{ secrets.AZURE_OPENAI_AD_TOKEN }}
     AZURE_OPENAI_ENDPOINT: ${{ secrets.AZURE_OPENAI_ENDPOINT }}
     OPENAI_API_VERSION: ${{ secrets.OPENAI_API_VERSION }} # 2024-05-01-preview
 
