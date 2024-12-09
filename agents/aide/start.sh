@@ -1,6 +1,11 @@
 #!/bin/bash
 set -x # Print commands and their arguments as they are executed
 
+# replace http://localhost:5000 with http://localhost:${MLE_GRADING_PORT}
+sed -i "s|http://localhost:5000|http://localhost:${MLE_GRADING_PORT}|g" /home/instructions.txt
+sed -i "s|http://localhost:5000|http://localhost:${MLE_GRADING_PORT}|g" /home/additional_notes.txt
+sed -i "s|http://localhost:5000|http://localhost:${MLE_GRADING_PORT}|g" /home/instructions_obfuscated.txt
+
 cd ${AGENT_DIR}
 
 eval "$(conda shell.bash hook)" # make conda available to the shell

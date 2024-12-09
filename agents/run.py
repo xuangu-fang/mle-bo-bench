@@ -1,4 +1,5 @@
 import logging
+import os
 import time
 from pathlib import Path
 
@@ -15,6 +16,7 @@ from environment.utils import (
 from mlebench.registry import Competition
 from mlebench.utils import purple
 from conf import settings
+import socket
 
 CONSTANTS = dotenv_values(Path(__file__).parent.resolve() / ".shared_env")
 
@@ -127,6 +129,13 @@ def run_in_container(
         },
     }
 
+    def find_free_port():
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            s.bind(('', 0))
+            return s.getsockname()[1]
+
+    free_port = find_free_port()
+
     container = create_competition_container(
         client=client,
         competition=competition,
@@ -134,6 +143,7 @@ def run_in_container(
         volumes_config=volumes_config,
         env_vars={
             "COMPETITION_ID": competition.id,
+            "MLE_GRADING_PORT": str(free_port),
             **agent.env_vars,
         },
         container_image=image,
@@ -158,7 +168,7 @@ def run_in_container(
         time_start = time.monotonic()
         container.start()
         exit_code, _ = container.exec_run(
-            'timeout 60s sh -c "while ! curl -s http://localhost:5000/health > /dev/null; do sleep 1; done"'
+            f'timeout 60s sh -c "while ! curl -s http://localhost:$MLE_GRADING_PORT/health > /dev/null; do sleep 1; done"'
         )
         if exit_code != 0:
             raise RuntimeError(
@@ -172,4 +182,5 @@ def run_in_container(
     except Exception as e:
         raise e
     finally:
-        clean_up(container, logger, retain_container)
+        pass
+        #clean_up(container, logger, retain_container)
