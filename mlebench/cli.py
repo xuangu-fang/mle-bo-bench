@@ -166,14 +166,20 @@ def main():
         else:
             competitions = [new_registry.get_competition(args.competition_id)]
 
-        for competition in competitions:
+        import concurrent.futures
+
+        def prepare_competition(competition):
             download_and_prepare_dataset(
-                competition=competition,
-                keep_raw=args.keep_raw,
-                overwrite_checksums=args.overwrite_checksums,
-                overwrite_leaderboard=args.overwrite_leaderboard,
-                skip_verification=args.skip_verification,
+            competition=competition,
+            keep_raw=args.keep_raw,
+            overwrite_checksums=args.overwrite_checksums,
+            overwrite_leaderboard=args.overwrite_leaderboard,
+            skip_verification=args.skip_verification,
             )
+
+        with concurrent.futures.ThreadPoolExecutor() as executor:
+            executor.map(prepare_competition, competitions)
+
     if args.command == "grade":
         new_registry = registry.set_data_dir(Path(args.data_dir))
         submission = Path(args.submission)
