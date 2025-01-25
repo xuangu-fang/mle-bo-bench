@@ -86,11 +86,15 @@ class Registry:
             kwargs = parse_env_var_values(kwargs)
             env_vars = parse_env_var_values(env_vars)
 
+            print("agent_id",agent_id)
+            print("fpath.parent.name",fpath.parent.name)
             return Agent.from_dict(
                 {
                     **contents[agent_id],
                     "id": agent_id,
-                    "name": fpath.parent.name,
+                    # "name": fpath.parent.name,
+                    "name": agent_id,
+
                     "agents_dir": agents_dir,
                     "kwargs": kwargs,
                     "kwargs_type": kwargs_type,
@@ -100,6 +104,24 @@ class Registry:
             )
 
         raise ValueError(f"Agent with id {agent_id} not found")
+
+    def _load_agents(self):
+        agents_dir = Path(__file__).parent
+        logger.debug(f"Scanning agents directory: {agents_dir}")
+        
+        for agent_dir in agents_dir.iterdir():
+            if not agent_dir.is_dir():
+                continue
+            
+            logger.debug(f"Found directory: {agent_dir}")
+            config_path = agent_dir / "config.yaml"
+            
+            if not config_path.exists():
+                logger.debug(f"No config.yaml found in {agent_dir}")
+                continue
+            
+            logger.debug(f"Loading config from: {config_path}")
+            # ... rest of the loading logic ...
 
 
 registry = Registry()

@@ -3,7 +3,7 @@ FROM ubuntu:20.04
 # Avoid interactive dialog from apt-get and other packages requiring configuration
 ENV DEBIAN_FRONTEND=noninteractive
 
-RUN echo "nameserver 8.8.8.8" >> /etc/resolv.conf  && cat /etc/resolv.conf
+# RUN echo "nameserver 8.8.8.8" >> /etc/resolv.conf  && cat /etc/resolv.conf
 
 # install basic packages
 RUN apt-get update && apt-get install -y \

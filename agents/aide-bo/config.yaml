@@ -3,8 +3,8 @@ vars:
   time_limit: &time_limit 86400 # 24 h
 
 defaults: &defaults
-  start: aide/start.sh
-  dockerfile: aide/Dockerfile
+  start: aide-bo/start.sh
+  dockerfile: aide-bo/Dockerfile
   kwargs_type: omegaconf
   env_vars: &env_vars
     TIME_LIMIT_SECS: *time_limit
@@ -16,7 +16,7 @@ kwargs_common: &kwargs_common
   exec.timeout: 32400 # 9 hours limit _per step_, to match max of kaggle.com
   copy_data: False # use symbolic links
 
-aide:
+aide-bo:
   <<: *defaults
   kwargs:
     <<: *kwargs_common
@@ -148,6 +148,3 @@ aide/obfuscated:
     <<: *env_vars
     OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
     OBFUSCATE: "true"
-
-
-    

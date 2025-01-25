@@ -4,6 +4,8 @@ outputs/
 /data/
 /data_privateonly/
 
+titanic_run/
+
 runs/
 runs/*/*/
 runs/*/metadata.json

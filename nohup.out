@@ -1,0 +1,1008 @@
+Traceback (most recent call last):
+  File "/home/fsk/mle-bench-aide/run_agent.py", line 16, in <module>
+    from agents.run import run_in_container
+  File "/Data/home/fsk/mle-bench-aide/agents/run.py", line 18, in <module>
+    from conf import settings
+  File "/Data/home/fsk/mle-bench-aide/conf.py", line 1, in <module>
+    from pydantic_settings import (
+ModuleNotFoundError: No module named 'pydantic_settings'
+Traceback (most recent call last):
+  File "/home/fsk/mle-bench-aide/run_agent.py", line 16, in <module>
+    from agents.run import run_in_container
+  File "/Data/home/fsk/mle-bench-aide/agents/run.py", line 18, in <module>
+    from conf import settings
+  File "/Data/home/fsk/mle-bench-aide/conf.py", line 1, in <module>
+    from pydantic_settings import (
+ModuleNotFoundError: No module named 'pydantic_settings'
+Traceback (most recent call last):
+  File "/home/fsk/mle-bench-aide/run_agent.py", line 16, in <module>
+    from agents.run import run_in_container
+  File "/Data/home/fsk/mle-bench-aide/agents/run.py", line 18, in <module>
+    from conf import settings
+  File "/Data/home/fsk/mle-bench-aide/conf.py", line 1, in <module>
+    from pydantic_settings import (
+ModuleNotFoundError: No module named 'pydantic_settings'
+Traceback (most recent call last):
+  File "/home/fsk/mle-bench-aide/run_agent.py", line 236, in <module>
+    asyncio.run(main(args))
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/fsk/mle-bench-aide/run_agent.py", line 96, in main
+    agent = agent_registry.get_agent(args.agent_id)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Data/home/fsk/mle-bench-aide/agents/registry.py", line 86, in get_agent
+    kwargs = parse_env_var_values(kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Data/home/fsk/mle-bench-aide/agents/utils.py", line 39, in parse_env_var_values
+    raise ValueError(f"Environment variable `{env_var}` is not set!")
+ValueError: Environment variable `CHAT_MODEL` is not set!
+Traceback (most recent call last):
+  File "/home/fsk/mle-bench-aide/run_agent.py", line 236, in <module>
+    asyncio.run(main(args))
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/fsk/mle-bench-aide/run_agent.py", line 113, in main
+    if not is_dataset_prepared(competition):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Data/home/fsk/mle-bench-aide/mlebench/data.py", line 164, in is_dataset_prepared
+    if not public.is_dir():
+           ^^^^^^^^^^^^^^^
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/pathlib.py", line 1250, in is_dir
+    return S_ISDIR(self.stat().st_mode)
+                   ^^^^^^^^^^^
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/pathlib.py", line 1013, in stat
+    return os.stat(self, follow_symlinks=follow_symlinks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/home/xuyang1/workspace/mle-bench_kaggle_data/spaceship-titanic/prepared/public'
+Traceback (most recent call last):
+  File "/home/fsk/mle-bench-aide/run_agent.py", line 236, in <module>
+    asyncio.run(main(args))
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/fsk/mle-bench-aide/run_agent.py", line 113, in main
+    if not is_dataset_prepared(competition):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Data/home/fsk/mle-bench-aide/mlebench/data.py", line 164, in is_dataset_prepared
+    if not public.is_dir():
+           ^^^^^^^^^^^^^^^
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/pathlib.py", line 1250, in is_dir
+    return S_ISDIR(self.stat().st_mode)
+                   ^^^^^^^^^^^
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/pathlib.py", line 1013, in stat
+    return os.stat(self, follow_symlinks=follow_symlinks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/home/xuyang1/workspace/mle-bench_kaggle_data/spaceship-titanic/prepared/public'
+Traceback (most recent call last):
+  File "/home/fsk/mle-bench-aide/run_agent.py", line 236, in <module>
+    asyncio.run(main(args))
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/fsk/mle-bench-aide/run_agent.py", line 113, in main
+    if not is_dataset_prepared(competition):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Data/home/fsk/mle-bench-aide/mlebench/data.py", line 164, in is_dataset_prepared
+    if not public.is_dir():
+           ^^^^^^^^^^^^^^^
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/pathlib.py", line 1250, in is_dir
+    return S_ISDIR(self.stat().st_mode)
+                   ^^^^^^^^^^^
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/pathlib.py", line 1013, in stat
+    return os.stat(self, follow_symlinks=follow_symlinks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/home/xuyang1/workspace/mle-bench_kaggle_data/spaceship-titanic/prepared/public'
+[2025-01-10 08:18:34,166] [data.py:165] Public directory does not exist.
+Traceback (most recent call last):
+  File "/home/fsk/mle-bench-aide/run_agent.py", line 236, in <module>
+    asyncio.run(main(args))
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/fsk/mle-bench-aide/run_agent.py", line 114, in main
+    raise ValueError(
+ValueError: Dataset for competition `spaceship-titanic` is not prepared! Please run `mlebench prepare -c spaceship-titanic` to prepare the dataset.
+[2025-01-10 08:24:11,104] [run_agent.py:123] Launching run group: 2025-01-10T08-24-10-GMT_run-group_aide
+[2025-01-10 08:24:11,105] [run_agent.py:142] Creating 1 workers to serve 1 tasks...
+[2025-01-10 08:24:11,127] [utils.py:155] Container created: competition-spaceship-titanic-2025-01-10T08-24-11-GMT-ea5694adfafb422aa91a184e94c0e43f
+[2025-01-11 08:24:18,378] [run_agent.py:173] 1 workers ran for 86407.27 seconds in total
+Traceback (most recent call last):
+  File "/home/fsk/mle-bench-aide/run_agent.py", line 236, in <module>
+    asyncio.run(main(args))
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/fsk/mle-bench-aide/run_agent.py", line 96, in main
+    agent = agent_registry.get_agent(args.agent_id)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Data/home/fsk/mle-bench-aide/agents/registry.py", line 86, in get_agent
+    kwargs = parse_env_var_values(kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Data/home/fsk/mle-bench-aide/agents/utils.py", line 39, in parse_env_var_values
+    raise ValueError(f"Environment variable `{env_var}` is not set!")
+ValueError: Environment variable `CHAT_MODEL` is not set!
+Traceback (most recent call last):
+  File "/home/fsk/mle-bench-aide/run_agent.py", line 236, in <module>
+    asyncio.run(main(args))
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/fsk/mle-bench-aide/run_agent.py", line 96, in main
+    agent = agent_registry.get_agent(args.agent_id)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Data/home/fsk/mle-bench-aide/agents/registry.py", line 87, in get_agent
+    env_vars = parse_env_var_values(env_vars)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Data/home/fsk/mle-bench-aide/agents/utils.py", line 39, in parse_env_var_values
+    raise ValueError(f"Environment variable `{env_var}` is not set!")
+ValueError: Environment variable `OPENAI_API_KEY` is not set!
+[2025-01-18 09:44:43,395] [run_agent.py:123] Launching run group: 2025-01-18T09-44-42-GMT_run-group_aide_bo
+[2025-01-18 09:44:43,397] [run_agent.py:142] Creating 1 workers to serve 1 tasks...
+[2025-01-18 09:44:43,405] [run_agent.py:173] 1 workers ran for 0.01 seconds in total
+[2025-01-18 10:10:17,871] [run_agent.py:123] Launching run group: 2025-01-18T10-10-17-GMT_run-group_aide
+[2025-01-18 10:10:17,872] [run_agent.py:142] Creating 1 workers to serve 1 tasks...
+[2025-01-18 10:10:17,899] [utils.py:155] Container created: competition-spaceship-titanic-2025-01-18T10-10-17-GMT-190d4d76b7604106a5710f6f069872db
+[2025-01-18 10:10:28,670] [run_agent.py:173] 1 workers ran for 10.80 seconds in total
+Traceback (most recent call last):
+  File "/home/fsk/mle-bench-aide/run_agent.py", line 14, in <module>
+    from agents.registry import Agent
+  File "/Data/home/fsk/mle-bench-aide/agents/registry.py", line 124, in <module>
+    registry = Registry()
+               ^^^^^^^^^^
+  File "/Data/home/fsk/mle-bench-aide/agents/registry.py", line 63, in __init__
+    "aide": Agent(
+            ^^^^^^
+TypeError: Agent.__init__() missing 3 required positional arguments: 'agents_dir', 'kwargs', and 'env_vars'
+Traceback (most recent call last):
+  File "/home/fsk/mle-bench-aide/run_agent.py", line 236, in <module>
+    asyncio.run(main(args))
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/fsk/mle-bench-aide/run_agent.py", line 96, in main
+    agent = agent_registry.get_agent(args.agent_id)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Data/home/fsk/mle-bench-aide/agents/registry.py", line 89, in get_agent
+    return Agent.from_dict(
+           ^^^^^^^^^^^^^^^^
+  File "/Data/home/fsk/mle-bench-aide/agents/registry.py", line 45, in from_dict
+    return Agent(
+           ^^^^^^
+  File "<string>", line 12, in __init__
+  File "/Data/home/fsk/mle-bench-aide/agents/registry.py", line 39, in __post_init__
+    assert self.dockerfile.exists(), f"dockerfile {self.dockerfile} does not exist."
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: dockerfile /Data/home/fsk/mle-bench-aide/agents/aide-bo/Dockerfile does not exist.
+[2025-01-18 10:23:59,808] [run_agent.py:123] Launching run group: 2025-01-18T10-23-59-GMT_run-group_aide
+[2025-01-18 10:23:59,810] [run_agent.py:142] Creating 1 workers to serve 1 tasks...
+[2025-01-18 10:23:59,848] [utils.py:155] Container created: competition-spaceship-titanic-2025-01-18T10-23-59-GMT-f2aeaabf11ef47c8a633f17763aee33d
+[2025-01-18 10:24:09,575] [run_agent.py:173] 1 workers ran for 9.76 seconds in total
+[2025-01-18 10:32:44,021] [run_agent.py:123] Launching run group: 2025-01-18T10-32-43-GMT_run-group_aide
+[2025-01-18 10:32:44,023] [run_agent.py:142] Creating 1 workers to serve 1 tasks...
+[2025-01-18 10:32:44,129] [utils.py:155] Container created: competition-spaceship-titanic-2025-01-18T10-32-44-GMT-b15688092da741dfa9c8759ef6269252
+[2025-01-18 10:32:54,349] [run_agent.py:173] 1 workers ran for 10.33 seconds in total
+[2025-01-18 12:26:30,255] [run_agent.py:123] Launching run group: 2025-01-18T12-26-29-GMT_run-group_aide-bo
+[2025-01-18 12:26:30,257] [run_agent.py:142] Creating 1 workers to serve 1 tasks...
+[2025-01-18 12:26:30,290] [utils.py:155] Container created: competition-spaceship-titanic-2025-01-18T12-26-30-GMT-febc0e1a3970491fa9a8b4bb32e917e8
+[2025-01-18 12:26:39,762] [run_agent.py:173] 1 workers ran for 9.50 seconds in total
+agent_id aide-bo
+fpath.parent.name aide
+[2025-01-18 12:50:35,212] [run_agent.py:123] Launching run group: 2025-01-18T12-50-34-GMT_run-group_aide-bo
+[2025-01-18 12:50:35,213] [run_agent.py:142] Creating 1 workers to serve 1 tasks...
+[2025-01-18 12:50:35,246] [utils.py:155] Container created: competition-spaceship-titanic-2025-01-18T12-50-35-GMT-3c530b6ae62047a4b1445403ea89bcaf
+[2025-01-18 12:50:44,274] [run_agent.py:173] 1 workers ran for 9.06 seconds in total
+agent_id aide-bo
+fpath.parent.name aide-bo
+[2025-01-18 13:12:25,148] [run_agent.py:123] Launching run group: 2025-01-18T13-12-24-GMT_run-group_aide-bo
+[2025-01-18 13:12:25,150] [run_agent.py:142] Creating 1 workers to serve 1 tasks...
+[2025-01-18 13:12:25,195] [utils.py:155] Container created: competition-spaceship-titanic-2025-01-18T13-12-25-GMT-286d351b41bb4ee89d24ff10bacd206f
+[2025-01-18 13:12:34,551] [run_agent.py:173] 1 workers ran for 9.40 seconds in total
+agent_id aide-bo
+fpath.parent.name aide-bo
+[2025-01-18 13:31:02,988] [run_agent.py:123] Launching run group: 2025-01-18T13-31-02-GMT_run-group_aide-bo
+[2025-01-18 13:31:02,990] [run_agent.py:142] Creating 1 workers to serve 1 tasks...
+[2025-01-18 13:31:03,048] [utils.py:155] Container created: competition-spaceship-titanic-2025-01-18T13-31-02-GMT-91869a1045b3461bb7c6ad1e60ff2fd8
+agent_id aide-bo
+fpath.parent.name aide-bo
+Traceback (most recent call last):
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/fsk/mle-bench-aide/run_agent.py", line 156, in main
+    await queue.join()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/queues.py", line 215, in join
+    await self._finished.wait()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/locks.py", line 213, in wait
+    await fut
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 123, in run
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/fsk/mle-bench-aide/run_agent.py", line 236, in <module>
+    asyncio.run(main(args))
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 189, in run
+    with Runner(debug=debug) as runner:
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 63, in __exit__
+    self.close()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 73, in close
+    loop.run_until_complete(loop.shutdown_default_executor())
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/base_events.py", line 641, in run_until_complete
+    self.run_forever()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/base_events.py", line 608, in run_forever
+    self._run_once()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/base_events.py", line 1898, in _run_once
+    event_list = self._selector.select(timeout)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/selectors.py", line 468, in select
+    fd_event_list = self._selector.poll(timeout, max_ev)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+Exception ignored in: <module 'threading' from '/home/fsk/miniconda3/envs/mle/lib/python3.11/threading.py'>
+Traceback (most recent call last):
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/threading.py", line 1560, in _shutdown
+    atexit_call()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/concurrent/futures/thread.py", line 31, in _python_exit
+    t.join()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/threading.py", line 1119, in join
+    self._wait_for_tstate_lock()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/threading.py", line 1139, in _wait_for_tstate_lock
+    if lock.acquire(block, timeout):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt: 
+[2025-01-18 13:39:58,733] [run_agent.py:123] Launching run group: 2025-01-18T13-39-58-GMT_run-group_aide-bo
+[2025-01-18 13:39:58,735] [run_agent.py:142] Creating 1 workers to serve 1 tasks...
+[2025-01-18 13:39:58,771] [utils.py:155] Container created: competition-spaceship-titanic-2025-01-18T13-39-58-GMT-09e681b163e84db094691cc73d363e2b
+agent_id aide-bo
+fpath.parent.name aide-bo
+Traceback (most recent call last):
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/fsk/mle-bench-aide/run_agent.py", line 156, in main
+    await queue.join()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/queues.py", line 215, in join
+    await self._finished.wait()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/locks.py", line 213, in wait
+    await fut
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 123, in run
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/fsk/mle-bench-aide/run_agent.py", line 236, in <module>
+    asyncio.run(main(args))
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 189, in run
+    with Runner(debug=debug) as runner:
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 63, in __exit__
+    self.close()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 73, in close
+    loop.run_until_complete(loop.shutdown_default_executor())
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/base_events.py", line 641, in run_until_complete
+    self.run_forever()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/base_events.py", line 608, in run_forever
+    self._run_once()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/base_events.py", line 1898, in _run_once
+    event_list = self._selector.select(timeout)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/selectors.py", line 468, in select
+    fd_event_list = self._selector.poll(timeout, max_ev)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+Exception ignored in: <module 'threading' from '/home/fsk/miniconda3/envs/mle/lib/python3.11/threading.py'>
+Traceback (most recent call last):
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/threading.py", line 1560, in _shutdown
+    atexit_call()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/concurrent/futures/thread.py", line 31, in _python_exit
+    t.join()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/threading.py", line 1119, in join
+    self._wait_for_tstate_lock()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/threading.py", line 1139, in _wait_for_tstate_lock
+    if lock.acquire(block, timeout):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt: 
+[2025-01-18 14:00:23,278] [run_agent.py:123] Launching run group: 2025-01-18T14-00-22-GMT_run-group_aide-bo
+[2025-01-18 14:00:23,279] [run_agent.py:142] Creating 1 workers to serve 1 tasks...
+[2025-01-18 14:00:23,326] [utils.py:155] Container created: competition-spaceship-titanic-2025-01-18T14-00-23-GMT-808bf3c47aeb4989a99dbb3070ea7fa8
+[2025-01-19 01:17:51,968] [run_agent.py:123] Launching run group: 2025-01-19T01-17-51-GMT_run-group_aide-bo
+[2025-01-19 01:17:51,970] [run_agent.py:142] Creating 1 workers to serve 1 tasks...
+[2025-01-19 01:17:52,028] [utils.py:155] Container created: competition-spaceship-titanic-2025-01-19T01-17-51-GMT-f4b72627a6ec4b5eb9850a68ba3f6f86
+[2025-01-19 01:18:01,369] [run_agent.py:173] 1 workers ran for 9.40 seconds in total
+agent_id aide-bo
+fpath.parent.name aide-bo
+[2025-01-19 01:19:30,131] [utils.py:114] Error extracting output file: 404 Client Error for http+docker://localhost/v1.45/containers/aa0ca602b18ff3363fdc643d308d4b9779e0906be750c7f2244cf384fbc0855d/archive?path=%2Fhome%2Fcode: Not Found ("Could not find the file /home/code in container aa0ca602b18ff3363fdc643d308d4b9779e0906be750c7f2244cf384fbc0855d")
+[2025-01-19 01:19:30,132] [run_agent.py:173] 1 workers ran for 40746.85 seconds in total
+agent_id aide-bo
+fpath.parent.name aide-bo
+[2025-01-19 01:22:43,152] [run_agent.py:123] Launching run group: 2025-01-19T01-22-42-GMT_run-group_aide-bo
+[2025-01-19 01:22:43,154] [run_agent.py:142] Creating 1 workers to serve 1 tasks...
+[2025-01-19 01:22:43,211] [utils.py:155] Container created: competition-spaceship-titanic-2025-01-19T01-22-43-GMT-7f852854c1014cce968e5aa26e51bc5e
+[2025-01-19 01:22:53,108] [run_agent.py:173] 1 workers ran for 9.95 seconds in total
+agent_id aide-bo
+fpath.parent.name aide-bo
+[2025-01-19 01:30:09,695] [run_agent.py:123] Launching run group: 2025-01-19T01-30-09-GMT_run-group_aide-bo
+[2025-01-19 01:30:09,697] [run_agent.py:142] Creating 1 workers to serve 1 tasks...
+[2025-01-19 01:30:09,747] [utils.py:155] Container created: competition-spaceship-titanic-2025-01-19T01-30-09-GMT-bc5166b054294ad0bed001414098e8c5
+[2025-01-19 02:51:44,091] [utils.py:112] Nothing found in container at /home/submission.
+[2025-01-19 02:51:44,238] [utils.py:112] Nothing found in container at /home/logs.
+[2025-01-19 02:51:44,272] [utils.py:112] Nothing found in container at /home/code.
+agent_id aide-bo
+fpath.parent.name aide-bo
+Traceback (most recent call last):
+  File "/home/fsk/mle-bench-aide/run_agent.py", line 236, in <module>
+    asyncio.run(main(args))
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/fsk/mle-bench-aide/run_agent.py", line 171, in main
+    with open(run_group_dir / "metadata.json", "w") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Data/home/fsk/mle-bench-aide/runs/2025-01-19T01-30-09-GMT_run-group_aide-bo/metadata.json'
+[2025-01-19 02:53:20,976] [run_agent.py:123] Launching run group: 2025-01-19T02-53-20-GMT_run-group_aide-bo
+[2025-01-19 02:53:20,978] [run_agent.py:142] Creating 1 workers to serve 1 tasks...
+[2025-01-19 02:53:21,024] [utils.py:155] Container created: competition-spaceship-titanic-2025-01-19T02-53-20-GMT-5941c0b2f661437688e45f0b6daa2c3d
+[2025-01-19 03:13:41,943] [run_agent.py:173] 1 workers ran for 1220.96 seconds in total
+agent_id aide-bo
+fpath.parent.name aide-bo
+[2025-01-19 03:15:28,136] [run_agent.py:123] Launching run group: 2025-01-19T03-15-27-GMT_run-group_aide-bo
+[2025-01-19 03:15:28,138] [run_agent.py:142] Creating 1 workers to serve 1 tasks...
+[2025-01-19 03:15:28,206] [utils.py:155] Container created: competition-spaceship-titanic-2025-01-19T03-15-28-GMT-b44bc9ddd1164462acab979b1f90579f
+[2025-01-19 03:21:59,467] [utils.py:114] Error extracting output file: 404 Client Error for http+docker://localhost/v1.45/containers/12d6f5dd11a2ea85124d339623cc242abb9f5a02e182dff199c040787eaf658c/archive?path=%2Fhome%2Fcode: Not Found ("Could not find the file /home/code in container 12d6f5dd11a2ea85124d339623cc242abb9f5a02e182dff199c040787eaf658c")
+[2025-01-19 03:21:59,469] [run_agent.py:173] 1 workers ran for 391.33 seconds in total
+agent_id aide-bo
+fpath.parent.name aide-bo
+[2025-01-19 03:23:35,502] [run_agent.py:123] Launching run group: 2025-01-19T03-23-35-GMT_run-group_aide-bo
+[2025-01-19 03:23:35,503] [run_agent.py:142] Creating 1 workers to serve 1 tasks...
+[2025-01-19 03:23:35,551] [utils.py:155] Container created: competition-spaceship-titanic-2025-01-19T03-23-35-GMT-d1977fb462bb489ca182ef4864cba5f8
+agent_id aide-bo
+fpath.parent.name aide-bo
+Traceback (most recent call last):
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/fsk/mle-bench-aide/run_agent.py", line 156, in main
+    await queue.join()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/queues.py", line 215, in join
+    await self._finished.wait()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/locks.py", line 213, in wait
+    await fut
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 123, in run
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/fsk/mle-bench-aide/run_agent.py", line 236, in <module>
+    asyncio.run(main(args))
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 189, in run
+    with Runner(debug=debug) as runner:
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 63, in __exit__
+    self.close()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 73, in close
+    loop.run_until_complete(loop.shutdown_default_executor())
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/base_events.py", line 641, in run_until_complete
+    self.run_forever()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/base_events.py", line 608, in run_forever
+    self._run_once()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/base_events.py", line 1898, in _run_once
+    event_list = self._selector.select(timeout)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/selectors.py", line 468, in select
+    fd_event_list = self._selector.poll(timeout, max_ev)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+Exception ignored in: <module 'threading' from '/home/fsk/miniconda3/envs/mle/lib/python3.11/threading.py'>
+Traceback (most recent call last):
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/threading.py", line 1560, in _shutdown
+    atexit_call()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/concurrent/futures/thread.py", line 31, in _python_exit
+    t.join()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/threading.py", line 1119, in join
+    self._wait_for_tstate_lock()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/threading.py", line 1139, in _wait_for_tstate_lock
+    if lock.acquire(block, timeout):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt: 
+[2025-01-19 03:33:59,755] [run_agent.py:123] Launching run group: 2025-01-19T03-33-59-GMT_run-group_aide-bo
+[2025-01-19 03:33:59,756] [run_agent.py:142] Creating 1 workers to serve 1 tasks...
+[2025-01-19 03:33:59,808] [utils.py:155] Container created: competition-spaceship-titanic-2025-01-19T03-33-59-GMT-1ba7d4ed6f554c2b8ffcf0ff0d593dc7
+[2025-01-19 14:13:36,436] [run_agent.py:123] Launching run group: 2025-01-19T14-13-35-GMT_run-group_aide-bo
+[2025-01-19 14:13:36,437] [run_agent.py:142] Creating 1 workers to serve 1 tasks...
+[2025-01-19 14:13:36,487] [utils.py:155] Container created: competition-spaceship-titanic-2025-01-19T14-13-36-GMT-eb6ea84741e841c2b443eca4ee51942f
+[2025-01-19 14:26:43,353] [utils.py:114] Error extracting output file: 404 Client Error for http+docker://localhost/v1.45/containers/7a47f0fdc8f083cdd171ce737894b6066ee00da8796a0d230219a6694e67fe7c/archive?path=%2Fhome%2Fcode: Not Found ("Could not find the file /home/code in container 7a47f0fdc8f083cdd171ce737894b6066ee00da8796a0d230219a6694e67fe7c")
+[2025-01-19 14:26:43,354] [run_agent.py:173] 1 workers ran for 39163.60 seconds in total
+agent_id aide-bo
+fpath.parent.name aide-bo
+agent_id aide-bo
+fpath.parent.name aide-bo
+Traceback (most recent call last):
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/fsk/mle-bench-aide/run_agent.py", line 156, in main
+    await queue.join()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/queues.py", line 215, in join
+    await self._finished.wait()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/locks.py", line 213, in wait
+    await fut
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 123, in run
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/fsk/mle-bench-aide/run_agent.py", line 236, in <module>
+    asyncio.run(main(args))
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 189, in run
+    with Runner(debug=debug) as runner:
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 63, in __exit__
+    self.close()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 73, in close
+    loop.run_until_complete(loop.shutdown_default_executor())
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/base_events.py", line 641, in run_until_complete
+    self.run_forever()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/base_events.py", line 608, in run_forever
+    self._run_once()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/base_events.py", line 1898, in _run_once
+    event_list = self._selector.select(timeout)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/selectors.py", line 468, in select
+    fd_event_list = self._selector.poll(timeout, max_ev)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+Exception ignored in: <module 'threading' from '/home/fsk/miniconda3/envs/mle/lib/python3.11/threading.py'>
+Traceback (most recent call last):
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/threading.py", line 1560, in _shutdown
+    atexit_call()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/concurrent/futures/thread.py", line 31, in _python_exit
+    t.join()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/threading.py", line 1119, in join
+    self._wait_for_tstate_lock()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/threading.py", line 1139, in _wait_for_tstate_lock
+    if lock.acquire(block, timeout):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt: 
+[2025-01-19 15:04:51,196] [run_agent.py:123] Launching run group: 2025-01-19T15-04-50-GMT_run-group_aide-bo
+[2025-01-19 15:04:51,198] [run_agent.py:142] Creating 1 workers to serve 1 tasks...
+[2025-01-19 15:04:51,266] [utils.py:155] Container created: competition-spaceship-titanic-2025-01-19T15-04-51-GMT-e594e8d5a7654694be3481b6ddd8a9f9
+[2025-01-20 01:08:52,870] [run_agent.py:123] Launching run group: 2025-01-20T01-08-52-GMT_run-group_aide-bo
+[2025-01-20 01:08:52,871] [run_agent.py:142] Creating 1 workers to serve 1 tasks...
+[2025-01-20 01:08:52,922] [utils.py:155] Container created: competition-spaceship-titanic-2025-01-20T01-08-52-GMT-cd7b56785c4143d59530c01539f3b605
+agent_id aide-bo
+fpath.parent.name aide-bo
+Traceback (most recent call last):
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/fsk/mle-bench-aide/run_agent.py", line 156, in main
+    await queue.join()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/queues.py", line 215, in join
+    await self._finished.wait()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/locks.py", line 213, in wait
+    await fut
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 123, in run
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/fsk/mle-bench-aide/run_agent.py", line 236, in <module>
+    asyncio.run(main(args))
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 189, in run
+    with Runner(debug=debug) as runner:
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 63, in __exit__
+    self.close()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 73, in close
+    loop.run_until_complete(loop.shutdown_default_executor())
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/base_events.py", line 641, in run_until_complete
+    self.run_forever()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/base_events.py", line 608, in run_forever
+    self._run_once()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/base_events.py", line 1898, in _run_once
+    event_list = self._selector.select(timeout)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/selectors.py", line 468, in select
+    fd_event_list = self._selector.poll(timeout, max_ev)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+Exception ignored in: <module 'threading' from '/home/fsk/miniconda3/envs/mle/lib/python3.11/threading.py'>
+Traceback (most recent call last):
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/threading.py", line 1560, in _shutdown
+    atexit_call()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/concurrent/futures/thread.py", line 31, in _python_exit
+    t.join()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/threading.py", line 1119, in join
+    self._wait_for_tstate_lock()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/threading.py", line 1139, in _wait_for_tstate_lock
+    if lock.acquire(block, timeout):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt: 
+[2025-01-20 01:36:01,988] [utils.py:114] Error extracting output file: 404 Client Error for http+docker://localhost/v1.45/containers/eadd541e62ad6a6310146df5705496a0cb5be95d92d07b52375b504ed38189a6/archive?path=%2Fhome%2Fcode: Not Found ("Could not find the file /home/code in container eadd541e62ad6a6310146df5705496a0cb5be95d92d07b52375b504ed38189a6")
+[2025-01-20 01:36:01,989] [run_agent.py:173] 1 workers ran for 37870.79 seconds in total
+agent_id aide-bo
+fpath.parent.name aide-bo
+[2025-01-20 01:37:33,517] [run_agent.py:123] Launching run group: 2025-01-20T01-37-33-GMT_run-group_aide-bo
+[2025-01-20 01:37:33,519] [run_agent.py:142] Creating 1 workers to serve 1 tasks...
+[2025-01-20 01:37:33,569] [utils.py:155] Container created: competition-spaceship-titanic-2025-01-20T01-37-33-GMT-86d768c486064032bc0026e79e40a261
+agent_id aide-bo
+fpath.parent.name aide-bo
+Traceback (most recent call last):
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/fsk/mle-bench-aide/run_agent.py", line 156, in main
+    await queue.join()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/queues.py", line 215, in join
+    await self._finished.wait()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/locks.py", line 213, in wait
+    await fut
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 123, in run
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/fsk/mle-bench-aide/run_agent.py", line 236, in <module>
+    asyncio.run(main(args))
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 189, in run
+    with Runner(debug=debug) as runner:
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 63, in __exit__
+    self.close()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 73, in close
+    loop.run_until_complete(loop.shutdown_default_executor())
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/base_events.py", line 641, in run_until_complete
+    self.run_forever()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/base_events.py", line 608, in run_forever
+    self._run_once()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/base_events.py", line 1898, in _run_once
+    event_list = self._selector.select(timeout)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/selectors.py", line 468, in select
+    fd_event_list = self._selector.poll(timeout, max_ev)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+Exception ignored in: <module 'threading' from '/home/fsk/miniconda3/envs/mle/lib/python3.11/threading.py'>
+Traceback (most recent call last):
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/threading.py", line 1560, in _shutdown
+    atexit_call()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/concurrent/futures/thread.py", line 31, in _python_exit
+    t.join()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/threading.py", line 1119, in join
+    self._wait_for_tstate_lock()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/threading.py", line 1139, in _wait_for_tstate_lock
+    if lock.acquire(block, timeout):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt: 
+[2025-01-20 02:04:18,743] [run_agent.py:123] Launching run group: 2025-01-20T02-04-18-GMT_run-group_aide-bo
+[2025-01-20 02:04:18,745] [run_agent.py:142] Creating 1 workers to serve 1 tasks...
+[2025-01-20 02:04:18,794] [utils.py:155] Container created: competition-spaceship-titanic-2025-01-20T02-04-18-GMT-3143659eb83b4625ab5e912c149c8612
+agent_id aide-bo
+fpath.parent.name aide-bo
+Traceback (most recent call last):
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/fsk/mle-bench-aide/run_agent.py", line 156, in main
+    await queue.join()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/queues.py", line 215, in join
+    await self._finished.wait()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/locks.py", line 213, in wait
+    await fut
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 123, in run
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/fsk/mle-bench-aide/run_agent.py", line 236, in <module>
+    asyncio.run(main(args))
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 189, in run
+    with Runner(debug=debug) as runner:
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 63, in __exit__
+    self.close()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 73, in close
+    loop.run_until_complete(loop.shutdown_default_executor())
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/base_events.py", line 641, in run_until_complete
+    self.run_forever()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/base_events.py", line 608, in run_forever
+    self._run_once()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/base_events.py", line 1898, in _run_once
+    event_list = self._selector.select(timeout)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/selectors.py", line 468, in select
+    fd_event_list = self._selector.poll(timeout, max_ev)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+Exception ignored in: <module 'threading' from '/home/fsk/miniconda3/envs/mle/lib/python3.11/threading.py'>
+Traceback (most recent call last):
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/threading.py", line 1560, in _shutdown
+    atexit_call()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/concurrent/futures/thread.py", line 31, in _python_exit
+    t.join()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/threading.py", line 1119, in join
+    self._wait_for_tstate_lock()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/threading.py", line 1139, in _wait_for_tstate_lock
+    if lock.acquire(block, timeout):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt: 
+[2025-01-20 02:06:07,534] [run_agent.py:123] Launching run group: 2025-01-20T02-06-07-GMT_run-group_aide-bo
+[2025-01-20 02:06:07,536] [run_agent.py:142] Creating 1 workers to serve 1 tasks...
+[2025-01-20 02:06:07,595] [utils.py:155] Container created: competition-spaceship-titanic-2025-01-20T02-06-07-GMT-d4c6322645874269b9f17b9585e51c30
+agent_id aide-bo
+fpath.parent.name aide-bo
+Traceback (most recent call last):
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/fsk/mle-bench-aide/run_agent.py", line 156, in main
+    await queue.join()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/queues.py", line 215, in join
+    await self._finished.wait()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/locks.py", line 213, in wait
+    await fut
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 123, in run
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/fsk/mle-bench-aide/run_agent.py", line 236, in <module>
+    asyncio.run(main(args))
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 189, in run
+    with Runner(debug=debug) as runner:
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 63, in __exit__
+    self.close()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 73, in close
+    loop.run_until_complete(loop.shutdown_default_executor())
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/base_events.py", line 641, in run_until_complete
+    self.run_forever()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/base_events.py", line 608, in run_forever
+    self._run_once()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/base_events.py", line 1898, in _run_once
+    event_list = self._selector.select(timeout)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/selectors.py", line 468, in select
+    fd_event_list = self._selector.poll(timeout, max_ev)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+Exception ignored in: <module 'threading' from '/home/fsk/miniconda3/envs/mle/lib/python3.11/threading.py'>
+Traceback (most recent call last):
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/threading.py", line 1560, in _shutdown
+    atexit_call()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/concurrent/futures/thread.py", line 31, in _python_exit
+    t.join()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/threading.py", line 1119, in join
+    self._wait_for_tstate_lock()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/threading.py", line 1139, in _wait_for_tstate_lock
+    if lock.acquire(block, timeout):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt: 
+[2025-01-20 03:16:23,504] [run_agent.py:123] Launching run group: 2025-01-20T03-16-23-GMT_run-group_aide-bo
+[2025-01-20 03:16:23,506] [run_agent.py:142] Creating 1 workers to serve 1 tasks...
+[2025-01-20 03:16:23,554] [utils.py:155] Container created: competition-spaceship-titanic-2025-01-20T03-16-23-GMT-c62f2f2331f84df2b7f4f546db210392
+Traceback (most recent call last):
+  File "/home/fsk/mle-bench-aide/run_agent.py", line 236, in <module>
+    asyncio.run(main(args))
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/fsk/mle-bench-aide/run_agent.py", line 96, in main
+    agent = agent_registry.get_agent(args.agent_id)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Data/home/fsk/mle-bench-aide/agents/registry.py", line 106, in get_agent
+    raise ValueError(f"Agent with id {agent_id} not found")
+ValueError: Agent with id aide-bo-full not found
+[2025-01-20 12:13:31,993] [run_agent.py:123] Launching run group: 2025-01-20T12-13-31-GMT_run-group_aide-bo-full
+[2025-01-20 12:13:31,995] [run_agent.py:142] Creating 1 workers to serve 1 tasks...
+[2025-01-20 12:13:32,038] [utils.py:155] Container created: competition-spaceship-titanic-2025-01-20T12-13-31-GMT-a4d98b6699b243358ed267b0b936696f
+[2025-01-21 03:16:30,978] [run_agent.py:173] 1 workers ran for 86407.47 seconds in total
+agent_id aide-bo
+fpath.parent.name aide-bo
+[2025-01-21 12:13:38,767] [run_agent.py:173] 1 workers ran for 86406.77 seconds in total
+agent_id aide-bo-full
+fpath.parent.name aide-bo-full
+[2025-01-22 06:40:16,505] [data.py:165] Public directory does not exist.
+agent_id aide-bo-full
+fpath.parent.name aide-bo-full
+Traceback (most recent call last):
+  File "/home/fsk/mle-bench-aide/run_agent.py", line 236, in <module>
+    asyncio.run(main(args))
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/fsk/mle-bench-aide/run_agent.py", line 114, in main
+    raise ValueError(
+ValueError: Dataset for competition `aerial-cactus-identification` is not prepared! Please run `mlebench prepare -c aerial-cactus-identification` to prepare the dataset.
+[2025-01-22 06:43:17,603] [data.py:165] Public directory does not exist.
+agent_id aide-bo-full
+fpath.parent.name aide-bo-full
+Traceback (most recent call last):
+  File "/home/fsk/mle-bench-aide/run_agent.py", line 236, in <module>
+    asyncio.run(main(args))
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/fsk/mle-bench-aide/run_agent.py", line 114, in main
+    raise ValueError(
+ValueError: Dataset for competition `aptos2019-blindness-detection` is not prepared! Please run `mlebench prepare -c aptos2019-blindness-detection` to prepare the dataset.
+[2025-01-22 06:44:17,326] [data.py:165] Public directory does not exist.
+agent_id aide-bo-full
+fpath.parent.name aide-bo-full
+Traceback (most recent call last):
+  File "/home/fsk/mle-bench-aide/run_agent.py", line 236, in <module>
+    asyncio.run(main(args))
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/fsk/mle-bench-aide/run_agent.py", line 114, in main
+    raise ValueError(
+ValueError: Dataset for competition `spaceship-titanic` is not prepared! Please run `mlebench prepare -c spaceship-titanic` to prepare the dataset.
+[2025-01-22 07:03:06,385] [run_agent.py:123] Launching run group: 2025-01-22T07-03-05-GMT_run-group_aide-bo-full
+[2025-01-22 07:03:06,425] [run_agent.py:142] Creating 11 workers to serve 22 tasks...
+[2025-01-22 07:03:06,532] [utils.py:155] Container created: competition-aptos2019-blindness-detection-2025-01-22T07-03-06-GMT-5eb0766bd2af49deb55007f6ce2af377
+[2025-01-22 07:03:06,536] [utils.py:155] Container created: competition-detecting-insults-in-social-commentary-2025-01-22T07-03-06-GMT-348924bedc5c46f4b018ec8622b6a618
+[2025-01-22 07:03:06,573] [utils.py:155] Container created: competition-aerial-cactus-identification-2025-01-22T07-03-06-GMT-9de050be29044ac5ab1b2eebc03e9bad
+[2025-01-22 07:03:06,573] [utils.py:155] Container created: competition-denoising-dirty-documents-2025-01-22T07-03-06-GMT-b06942057da947cdbf999dc144d3e417
+[2025-01-22 07:03:06,586] [utils.py:155] Container created: competition-leaf-classification-2025-01-22T07-03-06-GMT-57d7830cd22f4944b0266f8a5932d2e8
+[2025-01-22 07:03:06,587] [utils.py:155] Container created: competition-new-york-city-taxi-fare-prediction-2025-01-22T07-03-06-GMT-3129451719ba4991acdcf1b18bc68565
+[2025-01-22 07:03:06,587] [utils.py:155] Container created: competition-dog-breed-identification-2025-01-22T07-03-06-GMT-6185161c8fd44fa4a003dfdd3fb850d5
+[2025-01-22 07:03:06,589] [utils.py:155] Container created: competition-mlsp-2013-birds-2025-01-22T07-03-06-GMT-9fcbfda8f2e54e6d8b54f90649b2cea2
+[2025-01-22 07:03:06,590] [utils.py:155] Container created: competition-histopathologic-cancer-detection-2025-01-22T07-03-06-GMT-5a16169cc58940ceb11abb07f9c48231
+[2025-01-22 07:03:06,590] [utils.py:155] Container created: competition-jigsaw-toxic-comment-classification-challenge-2025-01-22T07-03-06-GMT-5dc98aab5a964410b56ef7a359f641d9
+[2025-01-22 07:03:06,593] [utils.py:155] Container created: competition-dogs-vs-cats-redux-kernels-edition-2025-01-22T07-03-06-GMT-2c794bbfbe1a43d389999b8c580ab618
+agent_id aide-bo-full
+fpath.parent.name aide-bo-full
+Traceback (most recent call last):
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/fsk/mle-bench-aide/run_agent.py", line 156, in main
+    await queue.join()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/queues.py", line 215, in join
+    await self._finished.wait()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/locks.py", line 213, in wait
+    await fut
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 123, in run
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/fsk/mle-bench-aide/run_agent.py", line 236, in <module>
+    asyncio.run(main(args))
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 189, in run
+    with Runner(debug=debug) as runner:
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 63, in __exit__
+    self.close()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 73, in close
+    loop.run_until_complete(loop.shutdown_default_executor())
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/base_events.py", line 641, in run_until_complete
+    self.run_forever()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/base_events.py", line 608, in run_forever
+    self._run_once()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/base_events.py", line 1898, in _run_once
+    event_list = self._selector.select(timeout)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/selectors.py", line 468, in select
+    fd_event_list = self._selector.poll(timeout, max_ev)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+Exception ignored in: <module 'threading' from '/home/fsk/miniconda3/envs/mle/lib/python3.11/threading.py'>
+Traceback (most recent call last):
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/threading.py", line 1560, in _shutdown
+    atexit_call()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/concurrent/futures/thread.py", line 31, in _python_exit
+    t.join()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/threading.py", line 1119, in join
+    self._wait_for_tstate_lock()
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/threading.py", line 1139, in _wait_for_tstate_lock
+    if lock.acquire(block, timeout):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt: 
+[2025-01-22 08:01:25,663] [run_agent.py:123] Launching run group: 2025-01-22T08-01-25-GMT_run-group_aide-bo-full
+[2025-01-22 08:01:25,690] [run_agent.py:142] Creating 5 workers to serve 22 tasks...
+[2025-01-22 08:01:25,721] [utils.py:155] Container created: competition-aerial-cactus-identification-2025-01-22T08-01-25-GMT-972a8962a2d64f43b9f6ef03a79a818c
+[2025-01-22 08:01:25,728] [utils.py:155] Container created: competition-denoising-dirty-documents-2025-01-22T08-01-25-GMT-0897fdc4da004bdeb9f266a1b7776f8a
+[2025-01-22 08:01:25,730] [utils.py:155] Container created: competition-aptos2019-blindness-detection-2025-01-22T08-01-25-GMT-cb04e01fc5c348caa0fbceb567c03edc
+[2025-01-22 08:01:25,779] [utils.py:155] Container created: competition-detecting-insults-in-social-commentary-2025-01-22T08-01-25-GMT-315dda036c3c4501ad6a1a32ec645bfc
+[2025-01-22 08:01:25,832] [utils.py:155] Container created: competition-dog-breed-identification-2025-01-22T08-01-25-GMT-f57ae8d4763a437d8bec29fe1d4c1b7b
+[2025-01-23 08:01:32,407] [utils.py:155] Container created: competition-dogs-vs-cats-redux-kernels-edition-2025-01-23T08-01-32-GMT-62e4df7fb39d4dcf971d7fd91447d287
+[2025-01-23 08:01:32,602] [utils.py:155] Container created: competition-histopathologic-cancer-detection-2025-01-23T08-01-32-GMT-e31158a3f14b4b80a50eb6b77726e7d4
+[2025-01-23 08:01:32,714] [utils.py:155] Container created: competition-jigsaw-toxic-comment-classification-challenge-2025-01-23T08-01-32-GMT-bee143f9035b417fba01851b30607f59
+[2025-01-23 08:01:32,833] [utils.py:155] Container created: competition-leaf-classification-2025-01-23T08-01-32-GMT-969f38b37e6b457aa37bd33a84ec79fe
+[2025-01-23 08:01:35,410] [utils.py:155] Container created: competition-mlsp-2013-birds-2025-01-23T08-01-35-GMT-bec9ac88398b474b876ba5795e5c30da
+[2025-01-24 08:01:39,463] [utils.py:155] Container created: competition-new-york-city-taxi-fare-prediction-2025-01-24T08-01-39-GMT-9b80b5dad1874b9d85a0080e009c0e5d
+[2025-01-24 08:01:39,720] [utils.py:155] Container created: competition-nomad2018-predict-transparent-conductors-2025-01-24T08-01-39-GMT-ddab40d7d52f448b989fbbe1fa8d289a
+[2025-01-24 08:01:39,761] [utils.py:155] Container created: competition-plant-pathology-2020-fgvc7-2025-01-24T08-01-39-GMT-9597f31c752147f4b92d18f46390ae41
+[2025-01-24 08:01:40,941] [utils.py:155] Container created: competition-random-acts-of-pizza-2025-01-24T08-01-40-GMT-8c3e93ed14b642bc83540eabff40c452
+[2025-01-24 08:01:43,325] [utils.py:155] Container created: competition-ranzcr-clip-catheter-line-classification-2025-01-24T08-01-43-GMT-21173f96bc0c49df8da163db94d34784
