@@ -1016,3 +1016,145 @@ KeyboardInterrupt:
 [2025-01-27 08:02:06,359] [run_agent.py:173] 5 workers ran for 432040.67 seconds in total
 agent_id aide-bo-full
 fpath.parent.name aide-bo-full
+[2025-01-29 01:54:52,610] [run_agent.py:123] Launching run group: 2025-01-29T01-54-52-GMT_run-group_aide-bo-full
+[2025-01-29 01:54:52,641] [run_agent.py:142] Creating 5 workers to serve 22 tasks...
+[2025-01-29 01:54:52,678] [utils.py:158] Container created: competition-aptos2019-blindness-detection-2025-01-29T01-54-52-GMT-575a6912753e44e381111694ba1b0f92
+[2025-01-29 01:54:52,678] [utils.py:158] Container created: competition-aerial-cactus-identification-2025-01-29T01-54-52-GMT-a4381bcd29b34523ad70d980a9d27f5e
+[2025-01-29 01:54:52,680] [utils.py:158] Container created: competition-detecting-insults-in-social-commentary-2025-01-29T01-54-52-GMT-cb2a47171b0849bc9a8759c35e662e40
+[2025-01-29 01:54:52,683] [utils.py:158] Container created: competition-denoising-dirty-documents-2025-01-29T01-54-52-GMT-078e5029f77d435eb49e564b16e1775b
+[2025-01-29 01:54:52,689] [utils.py:158] Container created: competition-dog-breed-identification-2025-01-29T01-54-52-GMT-2e1b0646fe7b488381768d47d1f1d456
+[2025-01-30 01:55:02,165] [utils.py:158] Container created: competition-dogs-vs-cats-redux-kernels-edition-2025-01-30T01-55-02-GMT-487a22fe205e4ad9ad66f38495c69726
+[2025-01-30 01:55:02,257] [utils.py:158] Container created: competition-histopathologic-cancer-detection-2025-01-30T01-55-02-GMT-db87d8b06c2a457ea5bdbbf3142fcc2e
+[2025-01-30 01:55:02,349] [utils.py:158] Container created: competition-jigsaw-toxic-comment-classification-challenge-2025-01-30T01-55-02-GMT-e704800567e9490ab0cba5ed3dc0cadd
+[2025-01-30 01:55:02,411] [utils.py:158] Container created: competition-leaf-classification-2025-01-30T01-55-02-GMT-166328eeb04241389bab88cba1f26ef9
+[2025-01-30 01:55:03,218] [utils.py:158] Container created: competition-mlsp-2013-birds-2025-01-30T01-55-03-GMT-525d73f1e7cc473fbf6d7976ab01b241
+[2025-01-31 01:55:11,634] [utils.py:158] Container created: competition-new-york-city-taxi-fare-prediction-2025-01-31T01-55-11-GMT-3cfa25fa7b9042e0898f0ff4d466f75d
+[2025-01-31 01:55:11,768] [utils.py:158] Container created: competition-nomad2018-predict-transparent-conductors-2025-01-31T01-55-11-GMT-cb539a150fa84a57a258d37bff208769
+[2025-01-31 01:55:11,833] [utils.py:158] Container created: competition-plant-pathology-2020-fgvc7-2025-01-31T01-55-11-GMT-f4cb681ed80a49cd8c729254fd4537c2
+[2025-01-31 01:55:12,428] [utils.py:158] Container created: competition-random-acts-of-pizza-2025-01-31T01-55-12-GMT-9e9fe23db1084989a1f2b8d7e131d23f
+[2025-01-31 01:55:13,413] [utils.py:158] Container created: competition-ranzcr-clip-catheter-line-classification-2025-01-31T01-55-13-GMT-f3acdb58a1524047ade72d092ae98e23
+[2025-02-01 01:55:21,107] [utils.py:158] Container created: competition-siim-isic-melanoma-classification-2025-02-01T01-55-20-GMT-40993fc022a94c9a846c10407ee5218a
+[2025-02-01 01:55:21,185] [utils.py:158] Container created: competition-spooky-author-identification-2025-02-01T01-55-20-GMT-716c29d6dadc47c593e8409a560c0ef9
+[2025-02-01 01:55:21,187] [utils.py:158] Container created: competition-tabular-playground-series-dec-2021-2025-02-01T01-55-21-GMT-ccd7400de20543f99fb47c5504e443a1
+[2025-02-01 01:55:21,505] [utils.py:158] Container created: competition-tabular-playground-series-may-2022-2025-02-01T01-55-21-GMT-1df1f9cdd77740e78be950795b0bfef0
+[2025-02-01 01:55:21,760] [utils.py:158] Container created: competition-text-normalization-challenge-english-language-2025-02-01T01-55-21-GMT-3d99c252082e427c93f60bbaa22ea225
+[2025-02-02 01:55:30,889] [utils.py:158] Container created: competition-text-normalization-challenge-russian-language-2025-02-02T01-55-30-GMT-283bdf94213f4b36bd33f44b1597db96
+[2025-02-02 01:55:30,910] [utils.py:158] Container created: competition-the-icml-2013-whale-challenge-right-whale-redux-2025-02-02T01-55-30-GMT-ad7b5b982b954301978225f5569ca2dd
+[2025-02-03 01:55:44,155] [run_agent.py:173] 5 workers ran for 432051.51 seconds in total
+agent_id aide-bo-full
+fpath.parent.name aide-bo-full
+Traceback (most recent call last):
+  File "/home/fsk/mle-bench-aide/run_agent.py", line 236, in <module>
+    asyncio.run(main(args))
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/fsk/mle-bench-aide/run_agent.py", line 96, in main
+    agent = agent_registry.get_agent(args.agent_id)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Data/home/fsk/mle-bench-aide/agents/registry.py", line 87, in get_agent
+    env_vars = parse_env_var_values(env_vars)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Data/home/fsk/mle-bench-aide/agents/utils.py", line 39, in parse_env_var_values
+    raise ValueError(f"Environment variable `{env_var}` is not set!")
+ValueError: Environment variable `DEEPSEEK_API_KEY` is not set!
+Traceback (most recent call last):
+  File "/home/fsk/mle-bench-aide/run_agent.py", line 236, in <module>
+    asyncio.run(main(args))
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/fsk/mle-bench-aide/run_agent.py", line 96, in main
+    agent = agent_registry.get_agent(args.agent_id)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Data/home/fsk/mle-bench-aide/agents/registry.py", line 87, in get_agent
+    env_vars = parse_env_var_values(env_vars)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Data/home/fsk/mle-bench-aide/agents/utils.py", line 39, in parse_env_var_values
+    raise ValueError(f"Environment variable `{env_var}` is not set!")
+ValueError: Environment variable `DEEPSEEK_API_KEY` is not set!
+Traceback (most recent call last):
+  File "/home/fsk/mle-bench-aide/run_agent.py", line 236, in <module>
+    asyncio.run(main(args))
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/fsk/mle-bench-aide/run_agent.py", line 96, in main
+    agent = agent_registry.get_agent(args.agent_id)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Data/home/fsk/mle-bench-aide/agents/registry.py", line 87, in get_agent
+    env_vars = parse_env_var_values(env_vars)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Data/home/fsk/mle-bench-aide/agents/utils.py", line 39, in parse_env_var_values
+    raise ValueError(f"Environment variable `{env_var}` is not set!")
+ValueError: Environment variable `DEEPSEEK_BASE_URL` is not set!
+Traceback (most recent call last):
+  File "/home/fsk/mle-bench-aide/run_agent.py", line 236, in <module>
+    asyncio.run(main(args))
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/fsk/mle-bench-aide/run_agent.py", line 96, in main
+    agent = agent_registry.get_agent(args.agent_id)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Data/home/fsk/mle-bench-aide/agents/registry.py", line 87, in get_agent
+    env_vars = parse_env_var_values(env_vars)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Data/home/fsk/mle-bench-aide/agents/utils.py", line 39, in parse_env_var_values
+    raise ValueError(f"Environment variable `{env_var}` is not set!")
+ValueError: Environment variable `DEEPSEEK_BASE_URL` is not set!
+[2025-02-04 15:09:14,239] [data.py:165] Public directory does not exist.
+agent_id aide-bo-full-deepseek-chat
+fpath.parent.name aide-bo-full
+Traceback (most recent call last):
+  File "/home/fsk/mle-bench-aide/run_agent.py", line 236, in <module>
+    asyncio.run(main(args))
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fsk/miniconda3/envs/mle/lib/python3.11/asyncio/base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/fsk/mle-bench-aide/run_agent.py", line 114, in main
+    raise ValueError(
+ValueError: Dataset for competition `spaceship-titanic` is not prepared! Please run `mlebench prepare -c spaceship-titanic` to prepare the dataset.
+[2025-02-04 15:10:27,123] [run_agent.py:123] Launching run group: 2025-02-04T15-10-26-GMT_run-group_aide-bo-full-deepseek-chat
+[2025-02-04 15:10:27,125] [run_agent.py:142] Creating 1 workers to serve 1 tasks...
+[2025-02-04 15:10:27,149] [utils.py:158] Container created: competition-spaceship-titanic-2025-02-04T15-10-27-GMT-8daf5e3de9f34ee9bbd6b4fe1d094ef7
+[2025-02-04 15:10:36,952] [run_agent.py:173] 1 workers ran for 9.83 seconds in total
+agent_id aide-bo-full-deepseek-chat
+fpath.parent.name aide-bo-full
+[2025-02-04 15:23:29,118] [run_agent.py:123] Launching run group: 2025-02-04T15-23-28-GMT_run-group_aide-bo-full-deepseek-chat
+[2025-02-04 15:23:29,120] [run_agent.py:142] Creating 1 workers to serve 1 tasks...
+[2025-02-04 15:23:29,162] [utils.py:158] Container created: competition-spaceship-titanic-2025-02-04T15-23-29-GMT-239cf5fab88f4bd3b70d6711b62ec03c
+[2025-02-05 02:43:33,619] [utils.py:114] Error extracting output file: 404 Client Error for http+docker://localhost/v1.45/containers/c938fdad078bde09eef6689a5b3d4cac125ac55ef0e9067b1d982e584c3ddb1f/archive?path=%2Fhome%2Fcode: Not Found ("No such container: c938fdad078bde09eef6689a5b3d4cac125ac55ef0e9067b1d982e584c3ddb1f")
+[2025-02-05 02:43:33,620] [run_agent.py:173] 1 workers ran for 40804.50 seconds in total
+agent_id aide-bo-full-deepseek-chat
+fpath.parent.name aide-bo-full

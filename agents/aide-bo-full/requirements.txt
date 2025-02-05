@@ -1,2 +1,4 @@
 # git+https://github.com/WinstonLiyt/aideml_plus@v3.1.0
-git+https://github.com/xuangu-fang/aideml_plus
+
+# use https://github.com/xuangu-fang/aide_plus_bo/tree/feature/deepseek-backend
+git+https://github.com/xuangu-fang/aide_plus_bo@feature/deepseek-backend

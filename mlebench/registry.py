@@ -10,9 +10,9 @@ from mlebench.utils import get_logger, get_module_dir, get_repo_dir, import_fn, 
 logger = get_logger(__name__)
 
 
-# DEFAULT_DATA_DIR = Path(user_cache_dir()) / "mle-bench" / "data"
+DEFAULT_DATA_DIR = Path(user_cache_dir()) / "mle-bench" / "data"
 # DEFAULT_DATA_DIR = Path("/home/xuyang1/workspace/mle-bench_kaggle_data")
-DEFAULT_DATA_DIR = Path("/home/xuyang1/workspace/kaggle/zip_files")
+# DEFAULT_DATA_DIR = Path("/home/xuyang1/workspace/kaggle/zip_files")
 
 @dataclass(frozen=True)
 class Competition:

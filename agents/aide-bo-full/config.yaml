@@ -31,6 +31,22 @@ aide-bo-full:
     OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
     OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL }}
 
+aide-bo-full-deepseek-chat:
+  <<: *defaults
+  kwargs:
+    <<: *kwargs_common
+    agent.code.model: deepseek-chat
+    agent.feedback.model: deepseek-chat
+    agent.steps: *step_count
+  env_vars:
+    <<: *env_vars
+    # AZURE_OPENAI_AD_TOKEN: ${{ secrets.AZURE_OPENAI_AD_TOKEN }}
+    # AZURE_OPENAI_ENDPOINT: ${{ secrets.AZURE_OPENAI_ENDPOINT }}
+    # OPENAI_API_VERSION: ${{ secrets.OPENAI_API_VERSION }} # 2024-05-01-preview
+    DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+    DEEPSEEK_BASE_URL: ${{ secrets.DEEPSEEK_BASE_URL }}
+
+
 aide/dev:
   <<: *defaults
   kwargs:
